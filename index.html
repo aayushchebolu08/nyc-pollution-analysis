@@ -169,15 +169,15 @@ var marker10 = L.circleMarker([40.7671306, -73.9224642], {
 
 var marker11 = L.circleMarker([40.754932, -73.984016], {
   color: "#c45656", fillColor: "#c45656", fillOpacity: 0.5, radius: 16, weight: 3
-}).bindPopup("Midtown (CD5)<br>AQI Level: 13.06").addTo(mapInstance);
+}).bindPopup("Midtown (CD5)<br>AQI Level: 50").addTo(mapInstance);
 
-var marker12 = L.circleMarker([40.7372, -73.9822], {  // approximate coords for Gramercy Park - Murray Hill
+var marker12 = L.circleMarker([40.8091, -73.9229], {
   color: "#c45656", fillColor: "#c45656", fillOpacity: 0.5, radius: 16, weight: 3
-}).bindPopup("Gramercy Park - Murray Hill<br>AQI Level: 12.10").addTo(mapInstance);
+}).bindPopup("Mott Haven<br>AQI Level: 63").addTo(mapInstance);
 
 var marker13 = L.circleMarker([40.681734, -74.169465], {
   color: "#c45656", fillColor: "#c45656", fillOpacity: 0.5, radius: 18, weight: 3
-}).bindPopup("I-95<br>AQI Level: 14.96").addTo(mapInstance);
+}).bindPopup("I-95<br>AQI Level: 67").addTo(mapInstance);
 
 
     // ... continue with the rest of your circle markers from your data
@@ -307,7 +307,7 @@ var marker13 = L.circleMarker([40.681734, -74.169465], {
         // --- DATA LOADING & PROCESSING ---
         function loadLocations() {
             const locationSelect = document.getElementById('locationSelect');
-            const locations = window.airQualityData?.availableLocations || ['I-95', 'Midtown (CD5)', 'Gramercy Park - Murray Hill'];
+            const locations = window.airQualityData?.availableLocations || ['I-95', 'Midtown (CD5)', 'Mott Haven'];
 
             locationSelect.innerHTML = locations.map(loc => `<option value="${loc}">${loc}</option>`).join('');
 
