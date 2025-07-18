@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c9d57c37a53d0a1a5d591e7b9529fe6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c9d57c37a53d0a1a5d591e7b9529fe6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c9d57c37a53d0a1a5d591e7b9529fe6a = L.map(
+                "map_c9d57c37a53d0a1a5d591e7b9529fe6a",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b5e7361d03a9680f62b8e0a2f79b940 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6b5e7361d03a9680f62b8e0a2f79b940.addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+            var circle_marker_42028d739e5ca9645e047bed7293177e = L.circleMarker(
+                [40.5834557, -74.1496048],
+                {"bubblingMouseEvents": true, "color": "#eda9a9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eda9a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_729447d45967288964afa018b85ec78f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_179a2c0f5dc177749b0b8f2cd5ecf5ad = $(`<div id="html_179a2c0f5dc177749b0b8f2cd5ecf5ad" style="width: 100.0%; height: 100.0%;">Staten Island<br>Pollution Level: 8.15</div>`)[0];
+                popup_729447d45967288964afa018b85ec78f.setContent(html_179a2c0f5dc177749b0b8f2cd5ecf5ad);
+            
+        
+
+        circle_marker_42028d739e5ca9645e047bed7293177e.bindPopup(popup_729447d45967288964afa018b85ec78f)
+        ;
+
+        
+    
+    
+            var circle_marker_2789b4a4f9a7275be2a4f68333fe3a39 = L.circleMarker(
+                [40.651897166748945, -73.88844650750961],
+                {"bubblingMouseEvents": true, "color": "#e99f9f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e99f9f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_b42da1f20e6d26075b4cd4b1ec8e2804 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_612863cb5d5ab9be70eb8fe5d19f593e = $(`<div id="html_612863cb5d5ab9be70eb8fe5d19f593e" style="width: 100.0%; height: 100.0%;">Canarsie - Flatlands<br>Pollution Level: 8.32</div>`)[0];
+                popup_b42da1f20e6d26075b4cd4b1ec8e2804.setContent(html_612863cb5d5ab9be70eb8fe5d19f593e);
+            
+        
+
+        circle_marker_2789b4a4f9a7275be2a4f68333fe3a39.bindPopup(popup_b42da1f20e6d26075b4cd4b1ec8e2804)
+        ;
+
+        
+    
+    
+            var circle_marker_528c0508b7df477c2ecb08e020d8fb23 = L.circleMarker(
+                [40.5912161, -73.9445822],
+                {"bubblingMouseEvents": true, "color": "#eda7a7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eda7a7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_28dc3eb4a0d7ac2be995c08267ffad68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_095614afa48b60ffa2d3e51a4b02380d = $(`<div id="html_095614afa48b60ffa2d3e51a4b02380d" style="width: 100.0%; height: 100.0%;">Sheepshead Bay (CD15)<br>Pollution Level: 8.18</div>`)[0];
+                popup_28dc3eb4a0d7ac2be995c08267ffad68.setContent(html_095614afa48b60ffa2d3e51a4b02380d);
+            
+        
+
+        circle_marker_528c0508b7df477c2ecb08e020d8fb23.bindPopup(popup_28dc3eb4a0d7ac2be995c08267ffad68)
+        ;
+
+        
+    
+    
+            var circle_marker_4cefa0e466e519c3118b1598b3742249 = L.circleMarker(
+                [-33.90872195, 18.39871797959615],
+                {"bubblingMouseEvents": true, "color": "#ffcccc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcccc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_b6dfa11a1b0925df63050a3d409db135 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6ac1dd912d98221fefaaa7b22007fba = $(`<div id="html_e6ac1dd912d98221fefaaa7b22007fba" style="width: 100.0%; height: 100.0%;">Rockaways<br>Pollution Level: 7.52</div>`)[0];
+                popup_b6dfa11a1b0925df63050a3d409db135.setContent(html_e6ac1dd912d98221fefaaa7b22007fba);
+            
+        
+
+        circle_marker_4cefa0e466e519c3118b1598b3742249.bindPopup(popup_b6dfa11a1b0925df63050a3d409db135)
+        ;
+
+        
+    
+    
+            var circle_marker_27962e8a812e5e7e3be743a6c2ef7b9b = L.circleMarker(
+                [40.7267692, -73.7415208],
+                {"bubblingMouseEvents": true, "color": "#f0aeae", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0aeae", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_b85998e5d33238ae2837f7adb37be528 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab383ca32afd43e871eb3a998b9c096a = $(`<div id="html_ab383ca32afd43e871eb3a998b9c096a" style="width: 100.0%; height: 100.0%;">Queens Village (CD13)<br>Pollution Level: 8.05</div>`)[0];
+                popup_b85998e5d33238ae2837f7adb37be528.setContent(html_ab383ca32afd43e871eb3a998b9c096a);
+            
+        
+
+        circle_marker_27962e8a812e5e7e3be743a6c2ef7b9b.bindPopup(popup_b85998e5d33238ae2837f7adb37be528)
+        ;
+
+        
+    
+    
+            var circle_marker_53ece35eca22d5ddd8bc06c8fe49e9b4 = L.circleMarker(
+                [40.633993, -73.9968059],
+                {"bubblingMouseEvents": true, "color": "#de8a8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de8a8a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_e5190fd83c9a21bb76d0e4df30c254e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd48e3f420e51c874b6e26003ef82e48 = $(`<div id="html_bd48e3f420e51c874b6e26003ef82e48" style="width: 100.0%; height: 100.0%;">Borough Park (CD12)<br>Pollution Level: 8.69</div>`)[0];
+                popup_e5190fd83c9a21bb76d0e4df30c254e4.setContent(html_bd48e3f420e51c874b6e26003ef82e48);
+            
+        
+
+        circle_marker_53ece35eca22d5ddd8bc06c8fe49e9b4.bindPopup(popup_e5190fd83c9a21bb76d0e4df30c254e4)
+        ;
+
+        
+    
+    
+            var circle_marker_58e6e58954a52bdaa1b163253960ac1d = L.circleMarker(
+                [43.06916196092864, -83.82900767284308],
+                {"bubblingMouseEvents": true, "color": "#e08e8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e08e8e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_84d6afd422d733c119cbbb091baea93a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa1aaeb4385d8dd5e60a1b30e4295c2e = $(`<div id="html_fa1aaeb4385d8dd5e60a1b30e4295c2e" style="width: 100.0%; height: 100.0%;">Flushing - Clearview<br>Pollution Level: 8.64</div>`)[0];
+                popup_84d6afd422d733c119cbbb091baea93a.setContent(html_fa1aaeb4385d8dd5e60a1b30e4295c2e);
+            
+        
+
+        circle_marker_58e6e58954a52bdaa1b163253960ac1d.bindPopup(popup_84d6afd422d733c119cbbb091baea93a)
+        ;
+
+        
+    
+    
+            var circle_marker_cbbb7906fdd46b1122a10f87446bf021 = L.circleMarker(
+                [40.6049772, -73.9934061],
+                {"bubblingMouseEvents": true, "color": "#e79d9d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e79d9d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_1d5ed2359e9c4f3e44cea92b5ad90905 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f31d72b89a2dd49252a838ea54b3c20 = $(`<div id="html_0f31d72b89a2dd49252a838ea54b3c20" style="width: 100.0%; height: 100.0%;">Bensonhurst (CD11)<br>Pollution Level: 8.37</div>`)[0];
+                popup_1d5ed2359e9c4f3e44cea92b5ad90905.setContent(html_0f31d72b89a2dd49252a838ea54b3c20);
+            
+        
+
+        circle_marker_cbbb7906fdd46b1122a10f87446bf021.bindPopup(popup_1d5ed2359e9c4f3e44cea92b5ad90905)
+        ;
+
+        
+    
+    
+            var circle_marker_88a43b4a4fb6d7b7d8aba6003876d90c = L.circleMarker(
+                [40.6667702, -73.8823583],
+                {"bubblingMouseEvents": true, "color": "#dd8888", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd8888", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_a32db69bce35e21c09ea4d700676fa59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4679018726dc14e78acd25bddf3d8d4 = $(`<div id="html_c4679018726dc14e78acd25bddf3d8d4" style="width: 100.0%; height: 100.0%;">East New York<br>Pollution Level: 8.73</div>`)[0];
+                popup_a32db69bce35e21c09ea4d700676fa59.setContent(html_c4679018726dc14e78acd25bddf3d8d4);
+            
+        
+
+        circle_marker_88a43b4a4fb6d7b7d8aba6003876d90c.bindPopup(popup_a32db69bce35e21c09ea4d700676fa59)
+        ;
+
+        
+    
+    
+            var circle_marker_849d68381858c3a32880cba0d7df019d = L.circleMarker(
+                [40.7556561, -73.8857755],
+                {"bubblingMouseEvents": true, "color": "#df8d8d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#df8d8d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_feca5d432833b2b7e49190b212f85c8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccae4e99916fe66df924f83e4afbdc10 = $(`<div id="html_ccae4e99916fe66df924f83e4afbdc10" style="width: 100.0%; height: 100.0%;">Jackson Heights (CD3)<br>Pollution Level: 8.66</div>`)[0];
+                popup_feca5d432833b2b7e49190b212f85c8d.setContent(html_ccae4e99916fe66df924f83e4afbdc10);
+            
+        
+
+        circle_marker_849d68381858c3a32880cba0d7df019d.bindPopup(popup_feca5d432833b2b7e49190b212f85c8d)
+        ;
+
+        
+    
+    
+            var circle_marker_186300b5f0a371d31840f1a055e9723c = L.circleMarker(
+                [40.7348246, -73.7934668],
+                {"bubblingMouseEvents": true, "color": "#e79b9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e79b9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_8db0f019225dc33211b16a4fdcfb13ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc37299300fc2c21ea0b0db07f9a41b9 = $(`<div id="html_dc37299300fc2c21ea0b0db07f9a41b9" style="width: 100.0%; height: 100.0%;">Fresh Meadows<br>Pollution Level: 8.39</div>`)[0];
+                popup_8db0f019225dc33211b16a4fdcfb13ac.setContent(html_dc37299300fc2c21ea0b0db07f9a41b9);
+            
+        
+
+        circle_marker_186300b5f0a371d31840f1a055e9723c.bindPopup(popup_8db0f019225dc33211b16a4fdcfb13ac)
+        ;
+
+        
+    
+    
+            var circle_marker_b7a921627395e8d0864a8cc2c32f33c6 = L.circleMarker(
+                [40.633993, -73.9968059],
+                {"bubblingMouseEvents": true, "color": "#df8c8c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#df8c8c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_4b493b6fae1402f3411aa7286b3bcabf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9d4a5be2b590cee78c1fb767906e329 = $(`<div id="html_e9d4a5be2b590cee78c1fb767906e329" style="width: 100.0%; height: 100.0%;">Borough Park<br>Pollution Level: 8.66</div>`)[0];
+                popup_4b493b6fae1402f3411aa7286b3bcabf.setContent(html_e9d4a5be2b590cee78c1fb767906e329);
+            
+        
+
+        circle_marker_b7a921627395e8d0864a8cc2c32f33c6.bindPopup(popup_4b493b6fae1402f3411aa7286b3bcabf)
+        ;
+
+        
+    
+    
+            var circle_marker_72a68f1cab17ddec368c2a184cbd7f90 = L.circleMarker(
+                [40.6537148, -73.9304151],
+                {"bubblingMouseEvents": true, "color": "#da8282", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da8282", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_b9b509856ca0648c61b6b6ba347e6dfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0ef92c8ff360a198566d704dd2e77ba = $(`<div id="html_f0ef92c8ff360a198566d704dd2e77ba" style="width: 100.0%; height: 100.0%;">East Flatbush (CD17)<br>Pollution Level: 8.84</div>`)[0];
+                popup_b9b509856ca0648c61b6b6ba347e6dfe.setContent(html_f0ef92c8ff360a198566d704dd2e77ba);
+            
+        
+
+        circle_marker_72a68f1cab17ddec368c2a184cbd7f90.bindPopup(popup_b9b509856ca0648c61b6b6ba347e6dfe)
+        ;
+
+        
+    
+    
+            var circle_marker_8b8593771b18ea9a739e40ad5882b486 = L.circleMarker(
+                [40.8810080893831, -73.90964940113523],
+                {"bubblingMouseEvents": true, "color": "#d57777", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d57777", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_89a3a9939dac8d042b5ecce48a7ef956 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e68063fdc0172cd88d5accf166a87b6 = $(`<div id="html_0e68063fdc0172cd88d5accf166a87b6" style="width: 100.0%; height: 100.0%;">Kingsbridge - Riverdale<br>Pollution Level: 9.04</div>`)[0];
+                popup_89a3a9939dac8d042b5ecce48a7ef956.setContent(html_0e68063fdc0172cd88d5accf166a87b6);
+            
+        
+
+        circle_marker_8b8593771b18ea9a739e40ad5882b486.bindPopup(popup_89a3a9939dac8d042b5ecce48a7ef956)
+        ;
+
+        
+    
+    
+            var circle_marker_92df72c8b8c822edb2f2919161abf71c = L.circleMarker(
+                [25.9024289, -97.4981698],
+                {"bubblingMouseEvents": true, "color": "#d77b7b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d77b7b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_59641f4c8d1a40b29c028be1f0f524eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44dfe248a5146f1b6cafafcb44ec6577 = $(`<div id="html_44dfe248a5146f1b6cafafcb44ec6577" style="width: 100.0%; height: 100.0%;">Brownsville (CD16)<br>Pollution Level: 8.97</div>`)[0];
+                popup_59641f4c8d1a40b29c028be1f0f524eb.setContent(html_44dfe248a5146f1b6cafafcb44ec6577);
+            
+        
+
+        circle_marker_92df72c8b8c822edb2f2919161abf71c.bindPopup(popup_59641f4c8d1a40b29c028be1f0f524eb)
+        ;
+
+        
+    
+    
+            var circle_marker_386bbf94e834cfcc2841dca6c8dd9709 = L.circleMarker(
+                [-3.7286278, -38.49034715966155],
+                {"bubblingMouseEvents": true, "color": "#d97f7f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d97f7f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_992efadaf985e84607b5c45d2cf64f4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f86f31ca69814086a83231a1fc19523d = $(`<div id="html_f86f31ca69814086a83231a1fc19523d" style="width: 100.0%; height: 100.0%;">Northeast Bronx<br>Pollution Level: 8.89</div>`)[0];
+                popup_992efadaf985e84607b5c45d2cf64f4f.setContent(html_f86f31ca69814086a83231a1fc19523d);
+            
+        
+
+        circle_marker_386bbf94e834cfcc2841dca6c8dd9709.bindPopup(popup_992efadaf985e84607b5c45d2cf64f4f)
+        ;
+
+        
+    
+    
+            var circle_marker_2d83a8140ff2bc6083b4df1d59e23c09 = L.circleMarker(
+                [40.8466508, -73.8785937],
+                {"bubblingMouseEvents": true, "color": "#d17070", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d17070", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_f97e1c25df22772a3b90d539b6d92fe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4857745cd5d3a933b9a7be2541e14d7 = $(`<div id="html_c4857745cd5d3a933b9a7be2541e14d7" style="width: 100.0%; height: 100.0%;">Bronx<br>Pollution Level: 9.18</div>`)[0];
+                popup_f97e1c25df22772a3b90d539b6d92fe0.setContent(html_c4857745cd5d3a933b9a7be2541e14d7);
+            
+        
+
+        circle_marker_2d83a8140ff2bc6083b4df1d59e23c09.bindPopup(popup_f97e1c25df22772a3b90d539b6d92fe0)
+        ;
+
+        
+    
+    
+            var circle_marker_e4c04ed3af1c1de22f964ce067d610c4 = L.circleMarker(
+                [40.6526006, -73.9497211],
+                {"bubblingMouseEvents": true, "color": "#d98181", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d98181", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_fd4959d901fbc260b667168f78a7f046 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d57c8275fbbef1a9fe11c8cdc7a17de = $(`<div id="html_2d57c8275fbbef1a9fe11c8cdc7a17de" style="width: 100.0%; height: 100.0%;">Brooklyn<br>Pollution Level: 8.86</div>`)[0];
+                popup_fd4959d901fbc260b667168f78a7f046.setContent(html_2d57c8275fbbef1a9fe11c8cdc7a17de);
+            
+        
+
+        circle_marker_e4c04ed3af1c1de22f964ce067d610c4.bindPopup(popup_fd4959d901fbc260b667168f78a7f046)
+        ;
+
+        
+    
+    
+            var circle_marker_2c7f1196dfbcbc7475b14e9dc7eb8fdc = L.circleMarker(
+                [40.6442221, -74.0075907],
+                {"bubblingMouseEvents": true, "color": "#c85e5e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c85e5e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_2c7878b23450296ec17f0d0ed4613901 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87ec962e72d9de27379b92c61cd8b648 = $(`<div id="html_87ec962e72d9de27379b92c61cd8b648" style="width: 100.0%; height: 100.0%;">Sunset Park (CD7)<br>Pollution Level: 9.49</div>`)[0];
+                popup_2c7878b23450296ec17f0d0ed4613901.setContent(html_87ec962e72d9de27379b92c61cd8b648);
+            
+        
+
+        circle_marker_2c7f1196dfbcbc7475b14e9dc7eb8fdc.bindPopup(popup_2c7878b23450296ec17f0d0ed4613901)
+        ;
+
+        
+    
+    
+            var circle_marker_58fb9fefa0a643e304da686a971c0d61 = L.circleMarker(
+                [40.7671306, -73.9224642],
+                {"bubblingMouseEvents": true, "color": "#c25252", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c25252", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_aa209c2615a48f8c4606545c6b920727 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ba3d95d7c50f50365ad9a101159bf2a = $(`<div id="html_0ba3d95d7c50f50365ad9a101159bf2a" style="width: 100.0%; height: 100.0%;">Long Island City - Astoria<br>Pollution Level: 9.70</div>`)[0];
+                popup_aa209c2615a48f8c4606545c6b920727.setContent(html_0ba3d95d7c50f50365ad9a101159bf2a);
+            
+        
+
+        circle_marker_58fb9fefa0a643e304da686a971c0d61.bindPopup(popup_aa209c2615a48f8c4606545c6b920727)
+        ;
+
+        
+    
+    
+            var circle_marker_1331518e3b2331a1d1f367e2c37c92d4 = L.circleMarker(
+                [40.83631305, -73.9188085267176],
+                {"bubblingMouseEvents": true, "color": "#c45656", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c45656", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_b1f5cc08cc4f5480f7a19015b5074348 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b366afe15e2dea62e4df26f61f7e85b8 = $(`<div id="html_b366afe15e2dea62e4df26f61f7e85b8" style="width: 100.0%; height: 100.0%;">High Bridge - Morrisania<br>Pollution Level: 9.64</div>`)[0];
+                popup_b1f5cc08cc4f5480f7a19015b5074348.setContent(html_b366afe15e2dea62e4df26f61f7e85b8);
+            
+        
+
+        circle_marker_1331518e3b2331a1d1f367e2c37c92d4.bindPopup(popup_b1f5cc08cc4f5480f7a19015b5074348)
+        ;
+
+        
+    
+    
+            var circle_marker_5a2ccf1993cbad59025b45a9590c474c = L.circleMarker(
+                [40.8461635948783, -73.880428075742],
+                {"bubblingMouseEvents": true, "color": "#c45656", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c45656", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_f2d24e9b8483e1b607f5201b0cbe6fb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4771be9cb1e2c4298ef5de4351c72e7 = $(`<div id="html_f4771be9cb1e2c4298ef5de4351c72e7" style="width: 100.0%; height: 100.0%;">South Bronx<br>Pollution Level: 9.64</div>`)[0];
+                popup_f2d24e9b8483e1b607f5201b0cbe6fb9.setContent(html_f4771be9cb1e2c4298ef5de4351c72e7);
+            
+        
+
+        circle_marker_5a2ccf1993cbad59025b45a9590c474c.bindPopup(popup_f2d24e9b8483e1b607f5201b0cbe6fb9)
+        ;
+
+        
+    
+    
+            var circle_marker_7e176f85a4d68d46666ed172398e9c2c = L.circleMarker(
+                [22.921099650000002, -83.19403675174992],
+                {"bubblingMouseEvents": true, "color": "#c96060", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c96060", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_c8243e6ccf6e06ad19e39f73067a8aa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0825e588610b87d13bdcf85fb6864f78 = $(`<div id="html_0825e588610b87d13bdcf85fb6864f78" style="width: 100.0%; height: 100.0%;">Central Harlem (CD10)<br>Pollution Level: 9.45</div>`)[0];
+                popup_c8243e6ccf6e06ad19e39f73067a8aa2.setContent(html_0825e588610b87d13bdcf85fb6864f78);
+            
+        
+
+        circle_marker_7e176f85a4d68d46666ed172398e9c2c.bindPopup(popup_c8243e6ccf6e06ad19e39f73067a8aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_6e76691d63ced35f648e044b7f6b996b = L.circleMarker(
+                [40.6442221, -74.0075907],
+                {"bubblingMouseEvents": true, "color": "#ca6262", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ca6262", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_0d541bc901a42d307834d42c544f60c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4143954c489739ec58f6377522ef048 = $(`<div id="html_c4143954c489739ec58f6377522ef048" style="width: 100.0%; height: 100.0%;">Sunset Park<br>Pollution Level: 9.42</div>`)[0];
+                popup_0d541bc901a42d307834d42c544f60c8.setContent(html_c4143954c489739ec58f6377522ef048);
+            
+        
+
+        circle_marker_6e76691d63ced35f648e044b7f6b996b.bindPopup(popup_0d541bc901a42d307834d42c544f60c8)
+        ;
+
+        
+    
+    
+            var circle_marker_5fa83bd7de1999d3cb0bf69c6805760c = L.circleMarker(
+                [40.7870455, -73.9754163],
+                {"bubblingMouseEvents": true, "color": "#bf4b4b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf4b4b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_dc027f552ce2559155c521edf2b4fe1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29c1bd443efa734f7d1cf0096c35ceb0 = $(`<div id="html_29c1bd443efa734f7d1cf0096c35ceb0" style="width: 100.0%; height: 100.0%;">Upper West Side<br>Pollution Level: 9.83</div>`)[0];
+                popup_dc027f552ce2559155c521edf2b4fe1d.setContent(html_29c1bd443efa734f7d1cf0096c35ceb0);
+            
+        
+
+        circle_marker_5fa83bd7de1999d3cb0bf69c6805760c.bindPopup(popup_dc027f552ce2559155c521edf2b4fe1d)
+        ;
+
+        
+    
+    
+            var circle_marker_62467a6a6151bf898ff8493230de3d5e = L.circleMarker(
+                [40.7743831, -73.9646405],
+                {"bubblingMouseEvents": true, "color": "#b02e2e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b02e2e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_fe81735fa3bd5c06ee73d2317a6cb0d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f06a13d50956dc02eeb390b0cfc3da70 = $(`<div id="html_f06a13d50956dc02eeb390b0cfc3da70" style="width: 100.0%; height: 100.0%;">Upper East Side<br>Pollution Level: 10.36</div>`)[0];
+                popup_fe81735fa3bd5c06ee73d2317a6cb0d2.setContent(html_f06a13d50956dc02eeb390b0cfc3da70);
+            
+        
+
+        circle_marker_62467a6a6151bf898ff8493230de3d5e.bindPopup(popup_fe81735fa3bd5c06ee73d2317a6cb0d2)
+        ;
+
+        
+    
+    
+            var circle_marker_62a9ddf273a972dd30dbadf2a0e25202 = L.circleMarker(
+                [40.7135482, -74.0054261],
+                {"bubblingMouseEvents": true, "color": "#a71c1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a71c1c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_4cb578361da805271f78e0ce8058a9a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55c04bd9bc18066f9aab923262218af9 = $(`<div id="html_55c04bd9bc18066f9aab923262218af9" style="width: 100.0%; height: 100.0%;">Lower Manhattan<br>Pollution Level: 10.68</div>`)[0];
+                popup_4cb578361da805271f78e0ce8058a9a5.setContent(html_55c04bd9bc18066f9aab923262218af9);
+            
+        
+
+        circle_marker_62a9ddf273a972dd30dbadf2a0e25202.bindPopup(popup_4cb578361da805271f78e0ce8058a9a5)
+        ;
+
+        
+    
+    
+            var circle_marker_f3346dc1e4d368f396f90d2fc4d16691 = L.circleMarker(
+                [43.6486382, -79.3802817],
+                {"bubblingMouseEvents": true, "color": "#a61a1a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a61a1a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_e59015a099a17b7d91e25266c069dfe1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6a13b509ac518c8c6ef0639c762c7cd = $(`<div id="html_a6a13b509ac518c8c6ef0639c762c7cd" style="width: 100.0%; height: 100.0%;">Financial District (CD1)<br>Pollution Level: 10.72</div>`)[0];
+                popup_e59015a099a17b7d91e25266c069dfe1.setContent(html_a6a13b509ac518c8c6ef0639c762c7cd);
+            
+        
+
+        circle_marker_f3346dc1e4d368f396f90d2fc4d16691.bindPopup(popup_e59015a099a17b7d91e25266c069dfe1)
+        ;
+
+        
+    
+    
+            var circle_marker_bfec3f122283ee86cad5f428325a2d7a = L.circleMarker(
+                [40.7237134, -73.9509714],
+                {"bubblingMouseEvents": true, "color": "#b43636", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b43636", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_c9d57c37a53d0a1a5d591e7b9529fe6a);
+        
+    
+        var popup_d6fce179f6d267d79a85dbbf08c06c80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27d4c088f6a0c489249615d601903117 = $(`<div id="html_27d4c088f6a0c489249615d601903117" style="width: 100.0%; height: 100.0%;">Greenpoint<br>Pollution Level: 10.20</div>`)[0];
+                popup_d6fce179f6d267d79a85dbbf08c06c80.setContent(html_27d4c088f6a0c489249615d601903117);
+            
+        
+
+        circle_marker_bfec3f122283ee86cad5f428325a2d7a.bindPopup(popup_d6fce179f6d267d79a85dbbf08c06c80)
+        ;
+
+        
+    
+</script>
+</html>
